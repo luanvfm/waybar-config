@@ -1,0 +1,89 @@
+@import "colors/catpuccin.css";
+
+* {
+    all: unset;
+    font-family: "JetBrains Mono", monospace;
+}
+
+window#waybar {
+    background-color: @dark;
+    color: @fg;
+    border-radius: 0 0 10px 10px;
+}
+
+window#waybar > box {
+    border-radius: 0 0 10px 10px;
+}
+
+#workspaces {
+    min-width: 100px;
+    font-size: 0.4rem;
+    padding: 2px 4px;
+    margin: 11px 0;
+    border-radius: 99px;
+}
+
+#workspaces button {
+    background-color: @bg;
+    color: transparent;
+    padding: 0px 5px;
+    border-radius: 99px;
+    margin: 0 2px;
+    min-width: 4px;
+    transition: all 200ms ease-in-out;
+}
+
+#workspaces button.active {
+    background-color: @fg;
+    min-width: 1.2rem;
+    transition: all 200ms ease-in-out;
+}
+
+#battery,
+#pulseaudio,
+#cava {
+    padding: 0 12px;
+    background-color: transparent;
+    color: @fg;
+    margin: 3px;
+    border-radius: 8px;
+}
+
+#custom-recording.recording {
+    color: @red;
+    font-weight: bold;
+    padding: 0 12px;
+    margin: 3px;
+}
+
+#cava {
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+#clock,
+#clock#right {
+    margin: 0 15px;
+    font-weight: 700;
+    font-size: 1.12rem;
+}
+
+.modules-left {
+    margin-left: 12px;
+}
+
+
+.modules-right {
+    margin-right: 12px;
+} 
+
+
+#battery.charging {
+    background-color: @green;
+    color: @dark;
+}
+
+#clock {
+    background-color: transparent;
+    color: @blue;
+    font-weight: bold;
+}
